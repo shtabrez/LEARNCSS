@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica;
+            background: slategray;
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper{
+            border: 0px solid black;
+            width: 1000px;
+            background: white;
+            margin: 0 auto;
+        }
+        #header{
+           
+            color: white;
+            height: 100px;
+        }
+        .abc{
+            background:crimson ;
+        }
+        .xyz{
+            background:green ;
+        }
+        #header h1{
+            padding: 30px 0 0 20px;
+            
+
+        }
+        #menu{
+            background:lightsalmon ;
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;
+
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            display:block;
+            padding:10px 13px;
+            text-decoration: none;
+            color: black;
+        }
+        #menu li a:hover{
+            background: crimson;
+            color: white;
+
+        }
+        #content{
+            width:800px;
+            min-height:500px ;
+            padding: 15px;
+            float: left;
+            box-sizing: border-box;
+        }    
+        #sidebar{
+            background:lightblue;
+            width:200px;
+            min-height:500px ;
+            float: right;
+        }
+        #sidebar a{
+            text-decoration: none;
+            color: black;
+        }
+        #footer{
+            background:lightsalmon ;
+            padding:5px 10px ;
+            text-align: right;
+            clear: both;
+        }
+    </style>   
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header" class="abc xyz" style="border:1px solid red;  color:orange;">
+           <h1>Deen and Duniya</h1>
+        </div>
+        <div id="menu">
+           <ul>
+             <li><a href="">Home</a></li>
+             <li><a href="">About Us</a></li>
+             <li><a href="">Gallery</a></li>
+             <li><a href="">Contact Us</a></li>
+           </ul>
+        </div>
+        <div id="content">
+             <h2>Design Basic Layout</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed tempora qui, quaerat vitae explicabo, optio saepe recusandae soluta fugiat placeat voluptates quod modi. Quae qui, similique maiores in illum quibusdam eos deserunt incidunt fuga dolores sunt est suscipit maxime commodi. Eligendi nisi autem natus, voluptatibus sed esse explicabo doloribus perspiciatis hic in voluptate nemo veniam magnam at commodi voluptas beatae consequuntur neque aliquid? Asperiores quos nobis enim doloremque ab explicabo facere reiciendis, assumenda quae cumque placeat, nam modi doloribus optio sint consequatur, eveniet ipsa ut id dolor neque illo sit nisi. Inventore minus provident cum itaque illo ea! Et.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi, dolor esse mollitia consectetur ex quaerat molestiae. Consequatur eveniet praesentium natus totam, et aspernatur sapiente consequuntur obcaecati laboriosam atque, vitae cupiditate nihil illum, quo culpa dolores delectus necessitatibus ducimus! Ducimus, sapiente fugit possimus sit quo et non veniam, voluptates dolorem sed consequatur? Quos reprehenderit delectus modi doloribus, culpa illum obcaecati dolore officiis ea quia quasi. Nisi, numquam blanditiis aliquid qui tempore veniam. Quia quisquam modi voluptatem odio voluptas, neque rem quos ab accusamus assumenda laboriosam? Nisi ipsum assumenda amet laudantium facilis tempore et temporibus dicta quas vel architecto, nesciunt ipsam.</p>
+            </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+        </div>
+        <div id="footer">
+            deen786duniya.blogspot.com
+        </div>
+    </div>
+    <script>
+       let element;
+       
+      document.getElementById("header").addEventListener("mouseenter",abc);
+      document.getElementById("header").addEventListener("click",function(){
+       this.style.border = "10px solid  red";
+ 
+      });
+      
+
+      function abc(){
+        document.getElementById("header").style.background ="green";
+      }
+      
+
+    //    console.log(element);
+
+       
+    </script>
+</body>
+</html>

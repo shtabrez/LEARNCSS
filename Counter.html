@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Increment</title>
+    <style>
+        body{ font: 19px/25px aria; padding: 10px 0 0 20px;
+          counter-reset: my-counter;
+        }
+        h1{ font-size: 32px; margin-bottom: 35px; color: green;}
+
+        h2::before{
+            content: " chapter " counter(my-counter,lower-alpha) " : " ;
+            counter-increment: my-counter 1;
+            color: crimson;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Yhoo Baba : CSS Counter-Increment</h1>
+
+    
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam velit sit corporis suscipit amet accusantium a tempore? Enim, ad voluptatum. Placeat, dignissimos alias ut iure at saepe corporis doloremque temporibus!</p>
+    
+    <h2>Lorem ipsum dolor amet.</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo minima illum laborum excepturi esse labore rerum unde, ullam earum soluta iusto maxime harum sit libero facere quam odio ut praesentium commodi aut odit ad quae. Explicabo obcaecati maiores temporibus, dicta consectetur maxime error sint omnis provident fuga amet laboriosam totam assumenda corporis mollitia? Quia, at labore quos, error libero quibusdam eos beatae officiis repellendus iure vel excepturi, provident voluptas asperiores illum minus dignissimos perspiciatis cupiditate commodi. Assumenda, natus quibusdam! Aperiam nulla fuga at a eos in architecto exercitationem accusamus quo, quia, quaerat consequuntur sequi! Non esse magni dolor animi fuga!</p>
+    
+    <h2>Lorem ipsum dolor dolor.</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam velit sit corporis suscipit amet accusantium a tempore? Enim, ad voluptatum. Placeat, dignissimos alias ut iure at saepe corporis doloremque temporibus!</p>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam velit sit corporis suscipit amet accusantium a tempore? Enim, ad voluptatum. Placeat, dignissimos alias ut iure at saepe corporis doloremque temporibus!</p>
+
+
+</body>
+</html>
